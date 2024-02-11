@@ -240,7 +240,7 @@ padding: 1.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    margin: auto;
 }
 @media (width < 750px){
     .section__container{
