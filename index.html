@@ -18,17 +18,21 @@
                 <i class="ri-menu-line"></i>
             </label>
             <input type="checkbox" name="check" id="check">
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#Mid_Section">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1C8GDatKoh-4ALU-Mai_ge4EiCjg91cYJ/view?usp=sharing">Resume</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="./contact.html">Contact</a></li>
+                <button class="resume-btn"><a href="https://drive.google.com/file/d/13SzOB4lQ-mmk7tl3TobGzZ1Xy2w3IhFb/view?usp=sharing">Resume</a></button>
             </ul>
+            
         </div>
     </nav>
     <section class="section">
         <div class="section__container">
-            <div class="content">
+            <div class="left-content">
                 <p class="subtitle"> Hii </p>
                 <h1 class="title">
                     I'm <span>Komal Verma<br>a</span> Programmer
@@ -41,14 +45,14 @@
                     I'm a team player with significant communication skills.
                 </p>
             </div>
-            <div class="image">
+            <div class="right-content">
                 <img src="./Assets/passport.jpeg" alt="Profile" />
             </div>
          </div>
     </section>
-     <section class="Mid_Section" id="Mid_Section">
+     <div class="about" id="about">
         <h2><span>Recent Projects</span> I'm working on 🚀</h2>
-        <div class="Mid_Section_container">
+        <div class="Recent_Projects_container">
             <div class="image1">
                 <video autoplay loop muted src="./Assets/Project1.mp4"></video>
             </div>
@@ -69,7 +73,102 @@
             </div>
            
         </div> 
-    </section> 
+    </div> 
+
+    <div class="skills" id="skills">
+        <h1 class="skills-heading">Skills</h1>
+        <p class="skills-info">Here are some of my skills</p>
+        <div class="skills-card-container">
+            <div><img src="./Assets/html-icon.jpg" height="20" width="20"/><p>HTML</p></div>
+            <div><img src="./Assets/css-icon.jpg" height="20" width="20"/><p>CSS</p></div>
+            <div><img src="./Assets/js-icon.png" height="20" width="20"/><p>JavaScript</p></div>
+            <div><img src="./Assets/mongodb-icon.png" height="20" width="20"/><p>MongoDB</p></div>
+            <div><img src="./Assets/react-icon.png" height="20" width="20"/><p>React</p></div>
+            <div><img src="./Assets/sql-icon.png" height="20" width="20"/><p>SQL</p></div>
+            <div><img src="./Assets/c++-icon.png" height="20" width="20"/><p>C++</p></div>
+            <div><img src="./Assets/js-icon.png" height="20" width="20"/><p>Machine Learning</p></div>
+            <div><img src="./Assets/ml-icon.png" height="20" width="20"/><p>OpenCV</p></div>
+            <div><img src="./Assets/compiler-icon.jpg" height="20" width="20"/><p>Compilers</p></div>
+            <div><img src="./Assets/nodejs-icon.png" height="20" width="20"/><p>Node.js</p></div>
+            <div><img src="./Assets/express-icon.png" height="20" width="20"/><p>Express.js</p></div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <h1 class="skills-heading">Projects</h1>
+        <p class="project-info">Implementation of my learnings</p>
+        <div class="project-card-container">
+            <div class="project-card">
+                <img src="./Assets/hostel-project.jpeg"/>
+                <div class="card-content">
+                    <p>It is a web-based application for managing university hostels using a hash table data structure to track room assignments and move-in/move-out schedules. Winning project of Equinox'23 CB, IGDTUW.</p>
+                    <button class="project-btn"><a href="https://github.com/komalverma04/Hostel-Management-Web-Application">Github</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./Assets/blog-project.png"/>
+                <div class="card-content">
+                    <p>A web application for managing, storing and writing blogs. I used MongoDB, React, Node.js, Express.js, HTML and CSS. It allows authenticated people to edit, add and delete blogs. Authentication is not needed to see the blogs</p>
+                    <button class="project-btn"><a href="https://github.com/komalverma04/BlogWebApplication">Github</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./Assets/face-project.jpeg"/>
+                <div class="card-content">
+                    <p>Face Recognition Attendance Marking Tool that uses computer vision techniques, face_recognition library to detect faces in real-time and mark attendance in an Excel sheet. Tested on 5 people.</p>
+                    <button class="project-btn"><a href="https://github.com/komalverma04/Face_Recognition">Github</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./Assets/weather-project.png"/>
+                <div class="card-content">
+                    <p>It is a command-line tool that accepts a temperature unit, city's name and number of days as arguments and returns the current weather forecast.Functionalities such as disaster warnings and notifications of cyclone.</p>
+                    <button class="project-btn"><a href="https://github.com/komalverma04/Komal-Portfolio">Github</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./Assets/artigan-project.webp"/>
+                <div class="card-content">
+                    <p>Monet-style Image Generator using machine learning, image processing, and GANs, which generated more than 5000 images, including real-time conversions. Implemented a voice chatbot using python for queries related to monet-style-images.</p>
+                    <button class="project-btn"><a href="https://devfolio.co/projects/artigan-7982">Devfolio</a></button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./Assets/doc-project.png"/>
+                <div class="card-content">
+                    <p>With my GreenSphere team we documented the biodiversity present in our college. This is a biodiversity documentation which lists all plants, trees, animals in IGDTUW and it will be revised and maintained frequently.</p>
+                    <button class="project-btn"><a href="https://heritagebioscope-documentation.netlify.app/">Website</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="events" id="events">
+        <h1 class="events-heading">Recent Socials and Events</h1>
+        <div class="events-card-container">
+            <div class="events-card">
+                <img src="./Assets/git-session.jpeg"/>
+                <div class="card-content">
+                    <p>Led a 2 hours long hands on workshop on Git and Github with 100+ students from various colleges with Young Leaders Group Organisation. I was overwhelmed by the feedbacks</p>
+                   
+                </div>
+            </div>
+            <div class="events-card">
+                <img src="./Assets/wwf.jpeg"/>
+                <div class="card-content">
+                    <p>Attended a day long meetup with WWF, India at Keolodo National Park. Networked with students and various professionals.</p>
+                    
+                </div>
+            </div>
+            <div class="events-card">
+                <img src="./Assets/wowow.jpeg"/>
+                <div class="card-content">
+                    <p>Hosted a live session with founder of WoWoW, NGO. Later got communication head position at WoWoW organisation.</p>
+                   
+                </div>
+            </div>
+           
+        </div>
+    </div>
     <section class="Bottom_section" id="Bottom_section">
 
      

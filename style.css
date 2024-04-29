@@ -55,7 +55,7 @@ nav .checkbox i{
     color: var(--primary-color);
     cursor: pointer;
 }
-ul {
+.nav-links {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -77,7 +77,7 @@ ul li a:hover {
     color: var(--text-light);
 }
 .section {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color-dark);
 
 }
 .section__container {
@@ -89,7 +89,7 @@ ul li a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 }
-.content {
+.left-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +97,7 @@ ul li a:hover {
 .subtitle{
     font-size: 1.5rem;
     letter-spacing: 2px;
-    color: var(--primary-color-dark);
+    color: white;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
@@ -113,22 +113,23 @@ ul li a:hover {
 }
 .description {
     line-height: 1.5rem;
-    color: var(--primary-color-dark);
+    color: white;
     margin-bottom: 2rem;
 }
-.image {
+.right-content {
     display: grid;
     place-items: center;
 }
-.image img{
+.right-content img{
     width: min(25rem, 90%);
     border-radius: 100%;
+    border: 15px solid white;
 }
 
-.Mid_Section {
-    background-color: var(--secondary-color);
+.about {
+    background: linear-gradient(225deg, #ffdda3 0%, #bae0f8 100%);
 }
-.Mid_Section_container {
+.Recent_Projects_container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
@@ -166,25 +167,26 @@ ul li a:hover {
 .image1 video:hover,.image2 img:hover{
     width: 35rem;
 }
-.Mid_Section h2 {
+.about h2 {
     font-size: 3rem;
     letter-spacing: 2px;
     color: var(--primary-color-dark);
     font-weight: 550;
     margin:auto;
     padding-bottom: 2.5rem;
+    padding-top: 25px;
     text-align: center;
 }
-.Mid_Section h2 span, .content1 p span, .content2 p span{
+.about h2 span, .content1 p span, .content2 p span{
     color: black;
     font-weight: 600;
     transition: 0.3s;
 }
-.Mid_Section h2 span:hover, .content1 p span:hover, .content2 p span:hover{
+.about h2 span:hover, .content1 p span:hover, .content2 p span:hover{
     color: var(--text-light);
 }
 .Bottom_section{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
 }
 .Bottom_container {
     display: flex;
@@ -214,7 +216,7 @@ padding: 1.5rem;
     font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: 500;
-    color: black;
+    color: white;
     transition: 0.8s;
 }
 .footer a > h4:hover, .footer > a:hover{
@@ -274,4 +276,150 @@ padding: 1.5rem;
     .footer a{
         margin-bottom: 30px;
     }
+}
+.resume-btn{
+    color: var(--primary-color-dark);
+    background-color: white;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color-dark);
+}
+.resume-btn :hover {
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--secondary-color);
+    color: var(--text-light);
+}
+.skills, .projects, .events {
+    text-align: center;
+    background-image: linear-gradient();
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+.skills-heading, .skills-info{
+    padding-bottom: 20px;
+}
+.skills-card-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20%;
+    
+}
+.skills-card-container div{
+padding: 10px;
+border: 3px solid var(--primary-color-dark);
+padding-left: 10px;
+padding-right: 10px;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+border-radius: 15px;
+
+}
+.project-card-container, .events-card-container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   margin: 5%;
+    align-items: center;
+    flex-direction: row;
+}
+.project-card, .events-card{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+   margin: 10px;
+  align-items: center;
+  border: 10px solid white;
+  background-color: white;
+  border-radius: 25px;
+  text-shadow: #40A2D8;
+ 
+}
+.projects{
+    background: linear-gradient(225deg, #ffdda3 0%, #bae0f8 100%);
+    
+}
+.card-content{
+    text-align: center;
+    background-color: white;
+    
+    margin-top: -5px;
+}
+.events-card img{
+    height: 200px;
+    width: 258px;
+    
+}
+.project-card img{
+    width: 258px;
+  
+}
+.events{
+    background-color: white;
+}
+
+.events-card{
+    background:  linear-gradient(225deg, #ffdda3 0%, #bae0f8 100%);
+}
+
+
+
+/* Style for the overall events section */
+.events {
+    padding: 20px; /* Adds space around the content within the events section */
+    background: #f0f0f0; /* Light grey background for the whole events section */
+}
+
+/* Header styling within the events section */
+.events-heading {
+    text-align: center; /* Center-aligns the heading text */
+    margin-bottom: 30px; /* Adds space below the heading */
+}
+
+/* Container for cards to manage layout */
+.events-card-container,.project-card-container {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    justify-content: center; /* Centers cards in the container */
+    gap: 20px; /* Space between each card */
+}
+
+/* Styling specific to each event card */
+.events-card, .project-card {
+    background-color: white; /* Sets a white background for the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds shadow to the cards */
+    border: 5px solid transparent; /* Transparent border needed for gradient */
+    background-image: linear-gradient(white, white), linear-gradient(to right, #ffdda3, #2575fc); /* Gradient border */
+    background-origin: border-box; /* Ensures the gradient covers the border area */
+    background-clip: content-box, border-box; /* Clips the white background and gradient correctly */
+    border-radius: 10px; /* Rounds the corners of the card */
+    width: 300px; /* Fixed width for each card */
+    overflow: hidden; /* Prevents content from spilling out */
+    display: flex; /* Flex layout for the contents */
+    flex-direction: column; /* Stacks the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers text */
+}
+
+/* Image styling within each card */
+.events-card img, .project-card img {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Maintain aspect ratio */
+}
+
+.project-btn{
+    margin: 10px;
+    padding: 5px 10px;
+    border: 2px solid var(--primary-color-dark);
+    color: #0B60B0;
+    background-color: white;
+}
+.project-info{
+    padding-bottom: -10px;
 }
